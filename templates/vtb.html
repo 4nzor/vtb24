@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Analysis system</title>
+
+    <link rel="stylesheet" href="{% static 'css/vtb.css'%}" type="text/css">
+    <link rel="stylesheet" href="../cont/css/medias.css" type="text/css">
+    <link rel="stylesheet" href="../cont/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../cont/css/export.css" type="text/css">
+
+    <script type="text/javascript" src="../cont/js/barchart/amcharts.js"></script>
+    <script type="text/javascript" src="../cont/js/barchart/serial.js"></script>
+
+    <script type="text/javascript" src="../cont/js/jquery.js"></script>
+
+    <script type="text/javascript" src="../cont/js/vtb.js"></script>
+    <script type="text/javascript" src="../cont/js/circles/circles.js"></script>
+
+</head>
+
+<body>
+<div class="left_block">
+    <img class="logo_img" src="../cont/images/logo.png" alt="">
+    <img class="glass_class" src="../cont/images/glass.png" alt="">
+    <img class="menu_img" src="../cont/images/graph_menu.png" alt="">
+
+    <div class="block_menu">
+        <div class="page1_but">Activity</div>
+        <div class="page2_but">Customers</div>
+        <div class="page3_but">Timeline</div>
+    </div>
+
+    <div class="down_scroll">
+        <div class="dwsc_icon">
+            <span class="d_scr"></span>
+            <span class="d_scr_2"></span>
+        </div>
+    </div>
+
+</div>
+
+<div class="start_block" id="start_block">
+
+    <div id="bg_start">
+        <div id="bg_layer"></div>
+    </div>
+
+    <div class="block_start_text">
+        <div class="start_bg_opac">
+        </div>
+        <div class="start_text">
+            Добро пожаловать на наш сайт, представляющий собой решение кейса №8, представленного организаторами форума
+            Finopolis 2018. </br> Данный проект является динамической инфографикой об использовании интернет-банка,
+            составленной по данным, предоставленным банком ВТБ. </br></br> Команда "Гильдия"
+        </div>
+    </div>
+
+</div>
+
+<div class="page1_block" id="page1_block">
+
+    <div class="data_block">
+        <div class="text_common_bef">Совершено</div>
+
+        <div class="comm_block">
+            <div class="block_oper_value" id="block_oper_value"></div>
+            <div class="check_comm"></div>
+        </div>
+
+        <div class="text_common_aft"> операций!</div>
+
+        <div class="text_bef_cir">из которых</div>
+
+        <div class="block_page1_circles">
+            <div class="block_circle">
+                <div class="circle_page1" id="circles-1"></div>
+                <div class="text_circles1">Открытие <p>вклада</p></div>
+            </div>
+            <div class="block_circle">
+                <div class="circle_page1" id="circles-2"></div>
+                <div class="text_circles1">Открытие <p>карты</p></div>
+            </div>
+            <div class="block_circle">
+                <div class="circle_page1" id="circles-3"></div>
+                <div class="text_circles1">Просмотр <p>счета</p></div>
+            </div>
+            <div class="block_circle">
+                <div class="circle_page1" id="circles-4"></div>
+                <div class="text_circles1">Перевод <p>P2P</p></div>
+            </div>
+            <div class="block_circle">
+                <div class="circle_page1" id="circles-5"></div>
+                <div class="text_circles1">Получение <p>выписки</p></div>
+            </div>
+            <div class="block_circle">
+                <div class="circle_page1" id="circles-6"></div>
+                <div class="text_circles1">Оплата <p>ЖКУ</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="line_midle_block"></div>
+
+<div class="page2_block" id="page2_block">
+
+    <div class="block_diags_page2">
+        <div class="chart_block chart1_block">
+            <div class="name_chart">Клиенты</div>
+            <div id="male_female" class="chart"></div>
+        </div>
+        <div class="chart_block chart2_block">
+            <div class="name_chart">Возраст</div>
+            <div id="age" class="chart"></div>
+        </div>
+    </div>
+
+    <div class="block_big_chart">
+        <div class="chart3_block">
+            <div class="name_chart3">Сумма <p>операции</p></div>
+            <div id="summ_oper" class="chart3"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="line_midle_block"></div>
+
+<div class="page3_block" id="page3_block">
+    <div class="block_cont_page3">
+        <div class="parag_page3">Количество операций</div>
+        <div class="block_charts">
+            <div class="chart_div_month" id="month"></div>
+            <div class="chart_div_quart" id="quart"></div>
+            <div class="chart_div_year" id="year"></div>
+        </div>
+        <div class="menu_charts_page3">
+            <div class="month_chart month_chart_active">За месяц</div>
+            <div class="quarter_chart">За квартал</div>
+            <div class="year_chart">За год</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

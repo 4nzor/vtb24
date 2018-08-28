@@ -1,0 +1,48 @@
+@media (max-width: 1590px) {
+    .chart1_block{
+        margin: 0 200px 0 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .text_common_bef,
+    .text_common_aft {
+        font-size: 50px;
+        top: 220px;
+    }
+
+    .text_common_bef {
+        left: 30px;
+    }
+
+    .text_common_aft {
+        right: 30px;
+    }
+}
+
+@media (max-width: 1320px) {
+    /* page 1 */
+    .text_common_bef,
+    .text_common_aft {
+        font-size: 40px;
+        top: 220px;
+    }
+
+    .text_common_bef {
+        left: 30px;
+    }
+
+    .text_common_aft {
+        right: 30px;
+    }
+
+    .text_bef_cir{
+        font-size: 30px;
+    }
+
+    /* page 2 */
+
+    .chart1_block{
+        margin: 0 50px 0 0;
+    }
+}

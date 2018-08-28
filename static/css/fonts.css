@@ -1,0 +1,19 @@
+@font-face {
+    font-family: As-Nova;
+    src: url(../Fonts/As-Nova.ttf);
+}
+
+@font-face {
+    font-family: helveticalight;
+    src: url(../Fonts/helveticalight.woff);
+}
+
+@font-face {
+    font-family: helveticaregular;
+    src: url(../Fonts/helveticaregular.woff);
+}
+
+@font-face {
+    font-family: opensanslight;
+    src: url(../Fonts/opensanslight.woff);
+}
